@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {Splide,SplideSlide} from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/splide.min.css';
 
 const Popular = () => {
 
@@ -32,7 +31,7 @@ const Popular = () => {
         <div>
 
             <Wrapper>
-                <h3>Popular Picks</h3>
+                <h5 style={{fontWeight:500}}>Popular Picks</h5>
 
                 <Splide options={{
                     perPage:4,
@@ -62,7 +61,7 @@ const Popular = () => {
 };
 
 const Wrapper = styled.div`
-    margin:4rem 0rem!important;
+    margin:1.5rem 0rem!important;
 `;
 
 const Card = styled.div`
